@@ -3,279 +3,266 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Story | 情侣记录网页</title>
+    <title>两个人的影像档案</title>
     <meta
       name="description"
-      content="一页带有编辑感与纪念册气质的情侣记录网页，收集海风、灯影、花海与雪夜。"
+      content="一座给两个人留存日常的私人纪念册网站，把海风、花房、灯影与落雪排成安静耐看的影像档案。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-orb page-orb-left" aria-hidden="true"></div>
-    <div class="page-orb page-orb-right" aria-hidden="true"></div>
-
-    <header class="site-header" id="top">
-      <div class="nav-shell">
-        <a class="brand" href="#top">Our Story</a>
-        <nav class="site-nav" aria-label="主导航">
-          <a href="#story">故事结构</a>
-          <a href="#moments">章节片段</a>
-          <a href="#gallery">全部照片</a>
-          <a href="#ending">结尾信件</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#top">Private Archive / 01</a>
+        <nav class="site-nav" aria-label="站点导航">
+          <a href="#top">封面</a>
+          <a href="#chapters">章节</a>
+          <a href="#gallery">索引</a>
+          <a href="#letter">尾页</a>
         </nav>
       </div>
     </header>
 
-    <main class="page-shell">
-      <section class="hero" data-reveal>
-        <div class="hero-copy">
-          <p class="eyebrow">A Soft Archive Of Us</p>
-          <h1>
-            把日常<br />
-            排成一首<br />
-            慢慢展开的情书
-          </h1>
-          <p class="lead">
-            这不是一页普通相册，而是一页带节奏的情侣纪念册。海边的手、花海里的合照、灯影下的侧脸和落雪时的回望，都被重新排版成更适合珍藏的样子。
+    <main class="page-shell" id="top">
+      <section class="cover">
+        <aside class="cover-rail">
+          <p class="rail-label">For Two</p>
+          <p class="rail-copy">
+            这不是展示成果的网页，只是把想留住的日常，重新排成更耐看的样子。
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#gallery">浏览相册</a>
-            <a class="button button-secondary" href="#moments">查看章节</a>
-          </div>
-          <div class="hero-metrics" aria-label="页面摘要">
-            <article class="metric-card">
-              <strong id="photo-count">30+</strong>
-              <span>张照片被收进这页</span>
-            </article>
-            <article class="metric-card">
-              <strong id="story-count">4</strong>
-              <span>个情绪章节</span>
-            </article>
-            <article class="metric-card">
-              <strong>1</strong>
-              <span>本专属在线纪念册</span>
-            </article>
-          </div>
-        </div>
+        </aside>
 
-        <div class="hero-stage" aria-label="页面主视觉">
-          <figure class="stage-card stage-main">
-            <img
-              src="photo/微信图片_20251224231056_174_40.jpg"
-              alt="情侣在镜面花海装置前合照"
-            />
-          </figure>
-          <figure class="stage-card stage-side stage-side-top">
-            <img
-              src="photo/微信图片_20251224211326_153_40.jpg"
-              alt="海边夕阳下牵手前行的照片"
-            />
-          </figure>
-          <figure class="stage-card stage-side stage-side-bottom">
-            <img
-              src="photo/微信图片_20251224211341_157_40.jpg"
-              alt="金色灯光里的女生肖像"
-            />
-          </figure>
-          <div class="quote-chip">
-            <span class="quote-chip-label">Editor's Note</span>
-            <p>
-              这一页刻意没有写死名字和纪念日，后面你只要把文案换成真正属于你们的版本，它就会更完整。
+        <div class="cover-body">
+          <div class="cover-copy" data-reveal>
+            <p class="section-kicker">Private memorial / photography archive</p>
+            <h1>
+              把风、灯光、花和落雪，
+              <span>排成一本可以慢慢翻的影像册。</span>
+            </h1>
+            <p class="cover-lede">
+              页面不急着解释关系，也不急着讲完整故事。先让照片说话，再让文字留在页边，像一本安静的私人摄影集，翻到哪里，哪里就有当时的光。
             </p>
+            <div class="cover-actions">
+              <a class="text-button text-button--filled" href="#gallery">查看全部影像</a>
+              <a class="text-button" href="#chapters">进入章节阅读</a>
+            </div>
+            <dl class="cover-facts" aria-label="档案摘要">
+              <div>
+                <dt>Frames</dt>
+                <dd id="photo-count">30</dd>
+              </div>
+              <div>
+                <dt>Chapters</dt>
+                <dd>4</dd>
+              </div>
+              <div>
+                <dt>Note</dt>
+                <dd>只属于两个人</dd>
+              </div>
+            </dl>
           </div>
-        </div>
-      </section>
 
-      <section class="section" id="story" data-reveal>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Story Structure</p>
-            <h2>像纪念册一样翻页，而不是把照片简单堆在一起</h2>
-          </div>
-          <p class="section-intro">
-            我把页面拆成首屏封面、章节片段、完整照片墙和结尾信件四层，让浏览时更像一场慢慢展开的回看，而不是一次性看完就结束。
-          </p>
-        </div>
-
-        <div class="chapter-grid">
-          <article class="paper-card story-card">
-            <span class="chapter-number">Chapter 01</span>
-            <h3>先定住氛围，再展开故事</h3>
-            <p>
-              首屏用合照做视觉重心，再用海边牵手和灯影肖像把情绪托起来。这样一打开页面，就能先感受到“你们是谁”，再继续往下看“你们经历了什么”。
-            </p>
-            <div class="tag-row" aria-label="故事关键词">
-              <span>海风</span>
-              <span>花海</span>
-              <span>灯影</span>
-              <span>雪夜</span>
-            </div>
-          </article>
-
-          <article class="paper-card painting-card">
-            <img
-              src="photo/微信图片_20251224211342_158_40.jpg"
-              alt="情侣背影面对夕阳海面的画作"
-            />
-            <div class="painting-copy">
-              <span class="chapter-number">Chapter 02</span>
-              <h3>让画和照片一起讲感情</h3>
-              <p>
-                这张手绘剪影很适合放进页面里。它让网页不只是“回忆展示”，而更像一本私人刊物，把情绪也一起装订进去。
-              </p>
-            </div>
-          </article>
-
-          <article class="paper-card detail-card">
-            <span class="chapter-number">Chapter 03</span>
-            <h3>下一步可以继续补完的内容</h3>
-            <ul class="detail-list">
-              <li>把首屏标题换成你们的名字或昵称</li>
-              <li>补上真正的纪念日、城市与地点</li>
-              <li>给重点照片写上属于你们的小句子</li>
-              <li>如果愿意，还能加一段只写给对方的话</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="moments" data-reveal>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Moments</p>
-            <h2>这页适合被分成四个章节来记住</h2>
-          </div>
-          <p class="section-intro">
-            我没有强行替你们写具体故事，而是用照片已经带出来的情绪做四个章节。这样页面很美，也保留了你后续继续填充的空间。
-          </p>
-        </div>
-
-        <div class="moments-grid">
-          <article class="moment-card">
-            <div class="moment-media">
-              <img
-                src="photo/微信图片_20251224211326_153_40.jpg"
-                alt="海边夕阳下牵手前行的照片"
-              />
-            </div>
-            <div class="moment-copy">
-              <span class="moment-label">Moment 01</span>
-              <h3>海边把手牵住的时候</h3>
-              <p>
-                风把落日和海面都吹散了一点，但镜头里留下来的动作很确定。那是有人正带着你，朝更远的地方走。
-              </p>
-            </div>
-          </article>
-
-          <article class="moment-card">
-            <div class="moment-media">
+          <div class="cover-visual" data-reveal>
+            <figure class="frame cover-main">
               <img
                 src="photo/微信图片_20251224231056_174_40.jpg"
-                alt="情侣在镜面花海装置前合照"
+                alt="情侣在红色花房与镜面空间中的合照"
               />
+            </figure>
+            <div class="cover-side">
+              <figure class="frame cover-side__top">
+                <img
+                  src="photo/微信图片_20251224211326_153_40.jpg"
+                  alt="海边落日下牵手向前的瞬间"
+                />
+              </figure>
+              <figure class="frame cover-side__bottom">
+                <img
+                  src="photo/微信图片_20251224211341_157_40.jpg"
+                  alt="金色灯影中的女生肖像"
+                />
+              </figure>
             </div>
-            <div class="moment-copy">
-              <span class="moment-label">Moment 02</span>
-              <h3>被镜子和玫瑰同时收藏的一帧</h3>
+            <div class="cover-caption">
+              <span>Cover spread</span>
               <p>
-                这张照片天然就带着“纪念页封面”的质感。镜面把故事放大了很多遍，花海则把气氛留在了最浪漫的那一层。
+                花房的红、海面的灰金和灯影的暖黄，是这一册最先被记住的颜色。
               </p>
             </div>
-          </article>
-
-          <article class="moment-card">
-            <div class="moment-media">
-              <img
-                src="photo/微信图片_20251224211341_157_40.jpg"
-                alt="金色灯光里的女生肖像"
-              />
-            </div>
-            <div class="moment-copy">
-              <span class="moment-label">Moment 03</span>
-              <h3>灯影把人照得特别温柔</h3>
-              <p>
-                有些照片不是为了记录事件，而是为了留住气质。金色的光、安静的表情和周围的反射，让这一帧特别像电影里的定格。
-              </p>
-            </div>
-          </article>
-
-          <article class="moment-card">
-            <div class="moment-media">
-              <img
-                src="photo/微信图片_20251224231210_177_40.jpg"
-                alt="男生在雪夜里自拍"
-              />
-            </div>
-            <div class="moment-copy">
-              <span class="moment-label">Moment 04</span>
-              <h3>雪夜会把想念变得更立体</h3>
-              <p>
-                明亮的雪和黑色羽绒服碰在一起，画面一下就有了冬天的重量。它很适合放在章节末尾，像一次安静但有力的收束。
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section gallery-section" id="gallery" data-reveal>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Full Gallery</p>
-            <h2>把所有照片排成一面会发光的记忆墙</h2>
           </div>
-          <p class="section-intro">
-            下面的照片墙会自动读取这次整理进来的所有素材。点击任意一张，就能放大查看，适合以后继续补充标题和注释。
-          </p>
         </div>
-
-        <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
-        <noscript>
-          <p class="noscript-note">
-            这个页面需要开启 JavaScript，才能生成完整的照片墙与点击放大效果。
-          </p>
-        </noscript>
       </section>
 
-      <section class="section ending-section" id="ending" data-reveal>
-        <div class="ending-card">
-          <div class="ending-copy">
-            <p class="eyebrow">For Future Edits</p>
-            <h2>如果爱会留痕，它应该是柔软、明亮，而且能被继续补写的。</h2>
-            <p>
-              这个页面已经把视觉结构和相册浏览方式搭好了。你之后只要继续替换标题、纪念日、城市和文案，就能把它变成真正只属于你们两个人的线上纪念册。
+      <section class="editorial-section editorial-section--intro" data-reveal>
+        <aside class="section-rail">
+          <p class="section-kicker">Opening note</p>
+        </aside>
+        <div class="section-body">
+          <div class="intro-grid">
+            <p class="intro-statement">
+              它更像一册私人的摄影档案，而不是一个“关于爱情”的模板页。
+            </p>
+            <p class="intro-text">
+              往下翻会看到海边、花房、灯影、晚餐和落雪。它们不一定组成宏大的叙事，但足够组成一份真实的相处记录。下面这条页码索引会把所有照片排成可检索的顺序。
             </p>
           </div>
-          <div class="ending-actions">
-            <a class="button button-primary" href="#gallery">继续看相册</a>
-            <a class="button button-secondary" href="#top">回到开头</a>
+          <div class="frame-index" id="frame-index" aria-label="图片索引"></div>
+        </div>
+      </section>
+
+      <section class="editorial-section" id="chapters">
+        <aside class="section-rail" data-reveal>
+          <p class="section-kicker">Four chapters</p>
+          <h2>用四个情绪章节，把重要的画面分开来读。</h2>
+        </aside>
+
+        <div class="section-body">
+          <article class="chapter" data-reveal>
+            <div class="chapter-copy">
+              <span class="chapter-mark">01 / 向海</span>
+              <h3>先把手牵住，再把日落和潮声一起收进来。</h3>
+              <p>
+                这张照片天然适合放在第一章。它不是浓烈的摆拍，而是一个很明确的动作：有人正带着另一个人往前走。于是页面一开始就有了方向感。
+              </p>
+            </div>
+            <figure class="frame chapter-figure chapter-figure--wide">
+              <img
+                src="photo/微信图片_20251224211326_153_40.jpg"
+                alt="海边落日下牵手向前的瞬间"
+              />
+            </figure>
+          </article>
+
+          <article class="chapter chapter--reverse" data-reveal>
+            <div class="chapter-copy">
+              <span class="chapter-mark">02 / 相伴</span>
+              <h3>有些合照不需要太多解释，它自己就已经像封面。</h3>
+              <p>
+                红色花房把气氛推到了最浓的一层，但镜面又把你们放回真实的现场里。这张照片很适合担任整册的中轴，因为它既有纪念感，也有生活里的那点随手。
+              </p>
+            </div>
+            <figure class="frame chapter-figure chapter-figure--wide">
+              <img
+                src="photo/微信图片_20251224231056_174_40.jpg"
+                alt="情侣在红色花房与镜面空间中的合照"
+              />
+            </figure>
+          </article>
+
+          <article class="chapter" data-reveal>
+            <div class="chapter-copy">
+              <span class="chapter-mark">03 / 灯影</span>
+              <h3>人物肖像像页边的停顿，让整册有了更柔和的呼吸。</h3>
+              <p>
+                不是每一页都要推进剧情。有些照片只是为了把一个人的气质留下来。金色灯光、安静的表情和周围的反射，让这一章更像电影里的静帧。
+              </p>
+            </div>
+            <figure class="frame chapter-figure chapter-figure--portrait">
+              <img
+                src="photo/微信图片_20251224211341_157_40.jpg"
+                alt="金色灯影中的女生肖像"
+              />
+            </figure>
+          </article>
+
+          <article class="chapter chapter--reverse" data-reveal>
+            <div class="chapter-copy">
+              <span class="chapter-mark">04 / 落雪</span>
+              <h3>最后一章留给冬夜，像把整本册子安静地合上。</h3>
+              <p>
+                雪落下来的时候，画面会自带一种更清晰的冷感。它适合做尾声，不伤感，却足够把“记住这一晚”这件事写得很具体。
+              </p>
+            </div>
+            <figure class="frame chapter-figure chapter-figure--portrait">
+              <img
+                src="photo/微信图片_20251224231210_177_40.jpg"
+                alt="落雪中的男生自拍"
+              />
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="editorial-section" id="gallery">
+        <aside class="section-rail" data-reveal>
+          <p class="section-kicker">Image index</p>
+          <h2>全部影像按页码排开，方便回看，也方便反复停留。</h2>
+        </aside>
+
+        <div class="section-body" data-reveal>
+          <div class="gallery-head">
+            <p>
+              点击任意照片进入大图。索引区会保留页码和标题，像一本真正可以翻阅的私人相册。
+            </p>
+            <span class="gallery-total"><span id="gallery-total">30</span> frames</span>
+          </div>
+          <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+          <noscript>
+            <p class="noscript-note">需要开启 JavaScript 才能使用图片索引和大图浏览。</p>
+          </noscript>
+        </div>
+      </section>
+
+      <section class="editorial-section" id="letter">
+        <aside class="section-rail" data-reveal>
+          <p class="section-kicker">Last page</p>
+        </aside>
+
+        <div class="section-body" data-reveal>
+          <div class="closing-panel">
+            <div class="closing-copy">
+              <h2>愿以后再翻开这些影像的时候，仍然能认出当天的光。</h2>
+              <p>
+                页面已经把封面、章节、索引和浏览方式整理好了。你之后只需要慢慢把名字、日期、地点，或者只属于你们的那几句短话补上，它就会更像一本真正完成的纪念册。
+              </p>
+              <div class="cover-actions">
+                <a class="text-button text-button--filled" href="#gallery">回到照片索引</a>
+                <a class="text-button" href="#top">回到封面</a>
+              </div>
+            </div>
+            <figure class="frame closing-art">
+              <img
+                src="photo/微信图片_20251224211342_158_40.jpg"
+                alt="面对海面与落日的双人剪影画作"
+              />
+            </figure>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Made for two people and all the light they kept.</p>
+      <p>Private archive for two people, arranged as pages instead of posts.</p>
     </footer>
 
     <div class="lightbox" id="lightbox" hidden>
       <div class="lightbox-backdrop" data-close="true"></div>
-      <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
-        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="关闭预览">
-          <span aria-hidden="true">&times;</span>
+      <div
+        class="lightbox-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lightbox-title"
+      >
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="关闭大图">
+          关闭
         </button>
-        <div class="lightbox-media">
+        <div class="lightbox-image-wrap">
           <img id="lightbox-image" src="" alt="" />
         </div>
-        <div class="lightbox-caption">
-          <span class="moment-label">Preview</span>
+        <div class="lightbox-sidebar">
+          <p class="section-kicker" id="lightbox-count">Frame 01</p>
           <h3 id="lightbox-title"></h3>
           <p id="lightbox-note"></p>
+          <div class="lightbox-actions">
+            <button class="lightbox-nav" id="lightbox-prev" type="button">上一张</button>
+            <button class="lightbox-nav" id="lightbox-next" type="button">下一张</button>
+          </div>
         </div>
       </div>
     </div>
